@@ -151,3 +151,15 @@ plt.grid(alpha=0.3)
 plt.title("Actual vs Predicted Curve")
 plt.savefig("actual_vs_predicted.png", dpi=300, bbox_inches='tight')
 plt.show()
+```
+---
+
+## Visualization
+
+- **Observed vs Predicted Points:**  
+  Shows how closely the fitted curve matches the actual data.
+  ![Observed vs Predicted](actual_vs_predicted.png)
+
+
+- **Desmos Plotting of Equation with our Predicted Parameter:** 
+  ![L1 Error vs t](desmos_plot.png)
