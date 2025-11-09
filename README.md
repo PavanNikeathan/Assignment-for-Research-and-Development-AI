@@ -17,16 +17,19 @@
 
 The best-fit parametric equation of the curve is:
 
-\[
+$$
 \left(
 t\cos(0.492161) - e^{0.021583|t|}\cdot\sin(0.3t)\sin(0.492161) + 54.916793,\;
 42 + t\sin(0.492161) + e^{0.021583|t|}\cdot\sin(0.3t)\cos(0.492161)
 \right)
-\]
+$$
 
 (You may also express the angle in degrees:  
-\(\theta = 28.2139^\circ\))
+Here is theta:
 
+$$
+\theta = 28.2139^\circ
+$$
 ---
 
 ## Step-by-Step Process
@@ -44,20 +47,20 @@ t = \text{linspace}(6, 60, N)
 
 ### 2. Model Equations
 
-\[
+$$
 \begin{aligned}
 x(t) &= t\cos(\theta) - e^{M|t|}\sin(0.3t)\sin(\theta) + X \\
 y(t) &= 42 + t\sin(\theta) + e^{M|t|}\sin(0.3t)\cos(\theta)
 \end{aligned}
-\]
+$$
 
 ---
 
 ### 3. Loss Function
 
-\[
+$$
 L = \frac{1}{N} \sum ( |x - x_{obs}| + |y - y_{obs}| )
-\]
+$$
 
 L1 loss is used because assignment uses L1 distance for scoring.
 
@@ -71,9 +74,10 @@ L1 loss is used because assignment uses L1 distance for scoring.
 
 | Parameter | Range |
 |----------|------|
-| \(0^\circ < \theta < 50^\circ\) | (0, 0.87266 rad) |
-| \(-0.05 < M < 0.05\) | exponential modulation |
-| \(0 < X < 100\) | horizontal shift |
+| 0° < θ < 50° | (0, 0.87266 rad) |
+| -0.05 < M < 0.05 | exponential modulation |
+| 0 < X < 100 | horizontal shift |
+
 
 ---
 
@@ -163,4 +167,5 @@ plt.show()
 
 - **Desmos Plotting of Equation with our Predicted Parameter:** 
   ![DESMOS](desmos_plpt.png)
+
 
