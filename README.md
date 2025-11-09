@@ -158,8 +158,9 @@ plt.show()
 
 - **Observed vs Predicted Points:**  
   Shows how closely the fitted curve matches the actual data.
-  ![Observed vs Predicted](actual_vs_predicted.png)
+  ![Actual vs Predicted](actual_vs_predicted.png)
 
 
 - **Desmos Plotting of Equation with our Predicted Parameter:** 
-  ![L1 Error vs t](desmos_plot.png)
+  ![DESMOS](desmos_plpt.png)
+
